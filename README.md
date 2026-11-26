@@ -1,5 +1,5 @@
 <!-- Profile README for https://github.com/omarcrypto599 -->
-
+![Profile Views](https://github-badge-generator-psi.vercel.app/api/badge/omarcrypto599)
 <div align="center">
 
 # Hi, I'm Omar 👋
