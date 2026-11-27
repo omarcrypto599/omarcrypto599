@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import html
 import os
 import sqlite3
 import tempfile
@@ -103,12 +102,9 @@ def sql_injection():
 def xss():
     submitted = request.form.get("message", "") if request.method == "POST" else ""
     # This is the intentionally unsafe lesson output. The template uses |safe.
-    # The safe counterpart is escaped here before rendering.
-    safe_message = html.escape(submitted, quote=True)
     return render_template(
         "xss.html",
         submitted=submitted,
-        safe_message=safe_message,
     )
 
 
