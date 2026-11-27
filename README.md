@@ -71,6 +71,14 @@ An educational Django authentication app using Django's built-in password hashin
 
 ➡️ [View project](projects/secure-django-auth/) · [Project documentation](projects/secure-django-auth/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
 
+### 🌐 [Python Network Scanner](projects/python-network-scanner/)
+
+A bounded TCP connect scanner for authorized network checks. Supports selected ports and CIDR targets, limits scan size and concurrency, and requires explicit acknowledgement before scanning public IP addresses. Includes input-validation and safety tests.
+
+**Technologies:** Python, socket, ipaddress, concurrent.futures, unittest.
+
+➡️ [View project](projects/python-network-scanner/) · [Source code](projects/python-network-scanner/network_scanner.py) · [Project documentation](projects/python-network-scanner/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
+
 > I aim to showcase projects with clear documentation, reproducible steps, and an honest explanation of what I built and learned.
 
 ## 🌱 Currently Learning
