@@ -61,7 +61,15 @@ A local Python command-line tool that evaluates password quality using length, c
 
 **Technologies:** Python, unittest, standard library.
 
-➡️ [View source code](projects/password-security-analyzer/password_analyzer.py) · [Project documentation](projects/password-security-analyzer/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
+➡️ [View source code](projects/password-security-analyzer/password_analyzer.py) · [Project documentation](projects/password-security-analyzer/README.md)
+
+### 🛡️ [Secure Django Authentication](projects/secure-django-auth/)
+
+An educational Django authentication app using Django's built-in password hashing and authentication, CSRF protection, authenticated routes, and django-axes failed-login protection. Includes automated authentication-flow tests and deployment security notes.
+
+**Technologies:** Python, Django, django-axes, SQLite, unittest.
+
+➡️ [View project](projects/secure-django-auth/) · [Project documentation](projects/secure-django-auth/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
 
 > I aim to showcase projects with clear documentation, reproducible steps, and an honest explanation of what I built and learned.
 
