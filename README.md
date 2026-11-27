@@ -79,6 +79,14 @@ A bounded TCP connect scanner for authorized network checks. Supports selected p
 
 ➡️ [View project](projects/python-network-scanner/) · [Source code](projects/python-network-scanner/network_scanner.py) · [Project documentation](projects/python-network-scanner/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
 
+### 🧪 [Web Security Testing Lab](projects/web-security-testing-lab/)
+
+A local-only Flask training application that demonstrates SQL injection and cross-site scripting (XSS) through intentionally vulnerable examples alongside safer implementations. Includes security headers, automated tests, and clear usage boundaries.
+
+**Technologies:** Python, Flask, SQLite, HTML, unittest.
+
+➡️ [View project](projects/web-security-testing-lab/) · [Application source](projects/web-security-testing-lab/app.py) · [Project documentation](projects/web-security-testing-lab/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
+
 > I aim to showcase projects with clear documentation, reproducible steps, and an honest explanation of what I built and learned.
 
 ## 🌱 Currently Learning
