@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}XSS Lesson{% endblock %}
+{% block content %}
+<h1>Cross-Site Scripting (XSS) Lesson</h1>
+<p>Submit harmless text or a simple HTML formatting snippet to compare unsafe and escaped output.</p>
+<form method="post">
+  <label for="message">Demo message</label>
+  <input id="message" name="message" value="{{ submitted }}" maxlength="200">
+  <button type="submit">Render comparison</button>
+</form>
+{% if request.method == "POST" %}
+  <section>
+    <h2>Unsafe HTML output</h2>
+    <p>This example intentionally marks untrusted input as safe. HTML markup may be interpreted by the browser.</p>
+    <div class="output">{{ submitted | safe }}</div>
+  </section>
+  <section>
+    <h2>Safe escaped output</h2>
+    <p>The submitted value is HTML-escaped before it is rendered.</p>
+    <div class="output">{{ safe_message }}</div>
+  </section>
+{% endif %}
+{% endblock %}
