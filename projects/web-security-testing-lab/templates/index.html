@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Web Security Testing Lab</h1>
+<p>Explore two common web weaknesses in a deliberately local application, then compare the safer coding patterns.</p>
+<ul>
+  <li><a href="{{ url_for('sql_injection') }}">SQL injection: unsafe string building vs parameterized queries</a></li>
+  <li><a href="{{ url_for('xss') }}">Cross-site scripting: unsafe HTML output vs escaping</a></li>
+</ul>
+<p><strong>Safety:</strong> This lab contains intentionally vulnerable examples and fictional data. Keep it on your own machine.</p>
+{% endblock %}
