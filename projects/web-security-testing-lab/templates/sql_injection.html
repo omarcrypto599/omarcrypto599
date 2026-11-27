@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}SQL Injection Lesson{% endblock %}
+{% block content %}
+<h1>SQL Injection Lesson</h1>
+<p>Search the fictional local demo-user table. Compare the unsafe query with the safe parameterized query.</p>
+<form method="post">
+  <label for="term">Username search</label>
+  <input id="term" name="term" value="{{ term }}" maxlength="100">
+  <button type="submit">Search</button>
+</form>
+{% if error %}<p role="alert">{{ error }}</p>{% endif %}
+<section>
+  <h2>Vulnerable string-concatenated query</h2>
+  <p>This lesson intentionally inserts input into SQL syntax. It is unsafe and exists only for local training.</p>
+  {% if vulnerable_rows %}
+    <ul>{% for row in vulnerable_rows %}<li>{{ row["username"] }} — {{ row["role"] }}</li>{% endfor %}</ul>
+  {% elif request.method == "POST" %}<p>No matching records.</p>{% endif %}
+</section>
+<section>
+  <h2>Safe parameterized query</h2>
+  <p>The query structure and user-supplied value are sent separately to SQLite.</p>
+  {% if safe_rows %}
+    <ul>{% for row in safe_rows %}<li>{{ row["username"] }} — {{ row["role"] }}</li>{% endfor %}</ul>
+  {% elif request.method == "POST" %}<p>No matching records.</p>{% endif %}
+</section>
+{% endblock %}
