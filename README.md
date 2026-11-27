@@ -53,13 +53,17 @@ These are the areas I’m particularly interested in exploring and developing pr
 - Understanding authentication, permissions, and secure data handling
 - Learning application-security principles and responsible testing
 
-## 📂 Projects
+## 📂 Featured Projects
 
-My public GitHub portfolio is at an early stage, and I’m building it out with practical work. I’ll use this section to highlight projects that demonstrate real implementation, problem-solving, and security-aware development.
+### 🔐 [Password Security Analyzer](projects/password-security-analyzer/)
 
-➡️ **[Explore my repositories](https://github.com/omarcrypto599?tab=repositories)**
+A local Python command-line tool that evaluates password quality using length, character variety, common-password checks, and predictable-pattern detection. Includes unit tests and does not store or transmit entered passwords.
 
-> I prefer to showcase projects with clear documentation, reproducible steps, and an honest explanation of what I built and learned.
+**Technologies:** Python, unittest, standard library.
+
+➡️ [View source code](projects/password-security-analyzer/password_analyzer.py) · [Project documentation](projects/password-security-analyzer/README.md) · [Explore all repositories](https://github.com/omarcrypto599?tab=repositories)
+
+> I aim to showcase projects with clear documentation, reproducible steps, and an honest explanation of what I built and learned.
 
 ## 🌱 Currently Learning
 
